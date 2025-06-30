@@ -1,0 +1,104 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  background-color: #2e2e42;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 1rem;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.buttons .btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  border-bottom: 2px solid #6c63ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .avatar {
+    width: 80px;
+  }
+
+  .buttons .btn {
+    display: block;
+    margin: 0.5rem auto;
+  }
+}
