@@ -3,103 +3,341 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anushka Dongaonkar</title>
+  <meta name="description" content="Portfolio of Anushka Dongaonkar, a bioinformatics researcher building omics pipelines, biomarker models, and research tools." />
+  <title>Anushka Dongaonkar | Bioinformatics Portfolio</title>
   <link rel="stylesheet" href="css/design.css" />
 </head>
 <body>
-  <header>
-    <nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav-brand" href="#top">AD</a>
       <ul class="navbar">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#focus">Focus</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h1>Anushka Dongaonkar</h1>
-      <p class="tagline">MS Bioinformatics @ BU | Multiomics | Alzheimer’s </p>
-      <div class="buttons">
-        <a href="AnushkaD_CV.pdf" download class="btn">Download CV</a>
+
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy">
+        <p class="eyebrow">Bioinformatics | Multi-omics | Machine Learning</p>
+        <h1>Anushka Dongaonkar</h1>
+        <p class="hero-text">
+         I’m a recent MS Bioinformatics graduate interested in building reproducible workflows, biomarker models, and applying machine learning for omics data analysis.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn primary" href="assets/AnushkaD_CV.pdf" download>Download CV</a>
+        </div>
       </div>
-    </div>
+
+      <aside class="hero-card" aria-label="Portfolio highlights">
+        <h3 class="card-kicker">A little about my work</h3>
+        <p>
+          I’ve worked across omics analysis, statistical modeling, and small research tools, and I’m excited to keep growing at the intersection of biology and data.
+        </p>
+        <div class="mini-stats">
+          <div>
+            <strong>83K+</strong>
+            <span>single cells analyzed</span>
+          </div>
+          <div>
+            <strong>0.83</strong>
+            <span>best EMCI classification ROC-AUC</span>
+          </div>
+          <div>
+            <strong>35K</strong>
+            <span>enhancer-gene records modeled</span>
+          </div>
+        </div>
+      </aside>
+    </section>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hey there! I’m Anushka, MS Bioinformatics student at Boston University working in Alzheimer's Disease and multiomics.
-      </p>
+  <main id="main">
+    <section class="section intro-grid" id="about">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Using biology and data to understand diseases</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I’m a MS Bioinformatics graduate from Boston University. Through research, coursework, and independent projects, I’ve worked in NGS data analysis, multi-omics integration, machine learning, and reproducible computational workflows.
+        </p>
+        <p>
+          I enjoy projects where there is a real biological question behind the data. I’m still early in my career, but I like learning by building, whether that means working through messy datasets, testing different analysis approaches, or turning results into something useful. 
+        </p>
+        <p>
+          Through my past projects, I’ve realized that real-world biological data and questions related to disease prevention, early detection, and biomarker discovery are what excite me the most.
+        </p>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <h3>Programming & Tools</h3>
-      <p>Python, R, HTML, CSS, JavaScript, MySQL, Bash, NextFlow, Conda, Git</p>
+    <section class="section" id="focus">
+      <div class="section-heading">
+        <p class="section-label">Research focus</p>
+        <h2>The themes I keep coming back to.</h2>
+      </div>
 
-      <h3>Domains</h3>
-      <p>Genomics, Proteomics, Metabolomics, Transcriptomics</p>
-
-      <h3>Data Science</h3>
-      <p>Data Analysis, Machine Learning, Data Visualization</p>
+      <div class="focus-grid">
+        <article class="soft-card">
+          <span class="icon">01</span>
+          <h3>Multi-omics biomarker discovery</h3>
+          <p>Integrating proteomics, metabolomics, and clinical metadata to explore disease-associated molecular signatures and evaluate their predictive performance.</p>
+        </article>
+        <article class="soft-card">
+          <span class="icon">02</span>
+          <h3>Single-cell transcriptomics</h3>
+          <p>Building ScanPy workflows for QC, integration, clustering, cell-type annotation, differential expression, and biological interpretation of pancreatic ductal adenocarcinoma tumor microenvironment.</p>
+        </article>
+        <article class="soft-card">
+          <span class="icon">03</span>
+          <h3>Regulatory genomics tools</h3>
+          <p>Designing databases and web interfaces that help researchers query, explore, and visualize enhancer-gene relationships from high-throughput STARR-seq experiments.</p>
+        </article>
+        <article class="soft-card">
+          <span class="icon">04</span>
+          <h3>ML for biological data</h3>
+          <p>Applying supervised models, feature selection, cross-validation, and benchmarking to classify disease states and prioritize interpretable biological signals.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <h3>Boston University</h3>
-      <p>MS in Bioinformatics — GPA: 3.9</p>
-      <h3>VIT University</h3>
-      <p>B.Tech in Biotechnology — GPA: 8.8</p>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-label">Featured projects</p>
+        <h2>A few projects that shaped how I think about biological data.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-topline">
+            <p class="project-type">Single-cell transcriptomics</p>
+            <a href="https://github.com/anushka-don/scanpy" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <h3>Single-cell RNA-seq analysis with ScanPy</h3>
+          <p>
+            Built an end-to-end workflow for more than 83,000 cells from primary tumors, liver metastases, and adjacent normal tissue. The analysis included QC, normalization, batch integration, UMAP, Leiden clustering, marker-based annotation, differential expression, and trajectory inference.
+          </p>
+          <div class="tags"><span>ScanPy</span><span>scRNA-seq</span><span>Leiden</span><span>Trajectory</span></div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-topline">
+            <p class="project-type">Machine learning</p>
+            <a href="https://github.com/anushka-don/gut-microbiome-analysis" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <h3>Gut microbiome disease prediction</h3>
+          <p>
+            Analyzed microbiome profiles from 1,831 subjects to study associations between microbial composition and cardiometabolic disease. Processed abundance data with taxonomic filtering, CLR transformation, diversity analysis, PERMANOVA, and ML models achieving ROC-AUC up to 0.89.
+          </p>
+          <div class="tags"><span>Microbiome</span><span>Random Forest</span><span>XGBoost</span><span>PERMANOVA</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <p class="project-type">Regulatory genomics</p>
+            <a href="https://github.com/anushka-don/starr_query" target="_blank" rel="noopener">GitHub </a>
+          </div>
+          <h3>STARR-seq transcriptome web app</h3>
+          <p>
+            Designed a Flask application and relational SQL database for exploring enhancer-gene associations from STARR-seq experiments. The tool made large regulatory genomics datasets easier to query, visualize, and use for everyone.
+          </p>
+          <div class="tags"><span>Flask</span><span>SQL</span><span>STARR-seq</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <p class="project-type">RNA-seq pipeline</p>
+            <a href="https://github.com/anushka-don/rna_seq" target="_blank" rel="noopener">GitHub </a>
+          </div>
+          <h3>Bulk RNA-seq data analysis pipeline</h3>
+          <p>
+            Built a reproducible RNA-seq workflow covering quality control, alignment, expression quantification, differential expression, and pathway enrichment. The project compared TYK2 knockout and wild-type pancreatic differentiation conditions.
+          </p>
+          <div class="tags"><span>RNA-seq</span><span>DE analysis</span><span>Pathways</span><span>Reproducibility</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <p class="project-type">Epigenomics</p>
+            <a href="https://github.com/anushka-don/chip_seq" target="_blank" rel="noopener">GitHub </a>
+          </div>
+          <h3>ChIP-seq analysis and motif discovery</h3>
+          <p>
+            Developed a ChIP-seq workflow for transcription factor binding analysis, including alignment, peak calling, genomic annotation, and motif enrichment. The analysis focused on RUNX1 binding patterns and regulatory regions.
+          </p>
+          <div class="tags"><span>ChIP-seq</span><span>MACS2</span><span>Motifs</span><span>RUNX1</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <p class="project-type">Interactive app</p>
+            <a href="https://github.com/anushka-don/gene_de_analysis_app" target="_blank" rel="noopener">GitHub </a>
+          </div>
+          <h3>Gene expression visualization app</h3>
+          <p>
+            Created an R Shiny application for interactive exploration of gene expression data across Alzheimer’s disease patient samples. The app supported dynamic plots and filters for exploratory transcriptomics analysis.
+          </p>
+          <div class="tags"><span>R Shiny</span><span>Visualization</span><span>Transcriptomics</span><span>AD</span></div>
+        </article>
+      </div>
     </section>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <h3>Zhang Lab, Boston University</h3>
-      <p>Researcher — Biomarker prediction for Alzheimer’s Disease</p>
-      <h3>CSIR-IMTech, India</h3>
-      <p>Research Trainee — Drug repurposing pipeline for <i>P. aeruginosa</i></p>
-      <h3>IIT-Madras, India</h3>
-      <p>Research Intern — Comparison study between Protein size and mass</p>
-      <h3>NeuroGen Brain and Spine Institute, India</h3>
-      <p>Clincal Research Intern - Effect of Antiaging therapy on biological age</p>
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="section-label">Experience</p>
+        <h2>Research, teaching, and technical experience.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Sep 2025 – Dec 2025</div>
+          <div class="timeline-content">
+            <h3>Web Developer | Wunderlich Lab, Boston University</h3>
+            <p>
+              Designed computational infrastructure for regulatory genomics datasets from STARR-seq experiments. Built a relational SQL database of approximately 35,000 enhancer-gene associations and a Flask web app for querying and visualizing genomic relationships.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Oct 2024 – Sep 2025</div>
+          <div class="timeline-content">
+            <h3>Research Assistant | Zhang Lab, Boston University</h3>
+            <p>
+              Analyzed large-scale proteomics and metabolomics datasets to identify candidate biomarkers for cognitive decline. Built reproducible Python and R workflows for preprocessing, QC, normalization, feature selection, and ML benchmarking, achieving AUROC around 0.85.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2025 – Mar 2025</div>
+          <div class="timeline-content">
+            <h3>Teaching Assistant | Questrom School of Business, Boston University</h3>
+            <p>
+              Supported graduate coursework in unsupervised and unstructured machine learning. Assisted students with clustering, dimensionality reduction, natural language processing, implementation questions, and interpretation of model outputs.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2024 – Jun 2024</div>
+          <div class="timeline-content">
+            <h3>Research Trainee | ABOpen Lab, CSIR-IMTech</h3>
+            <p>
+              Implemented a network-based drug repurposing workflow for <em>Pseudomonas aeruginosa</em>. Screened 792,612 protein-drug interactions, prioritized 383 candidate drugs, and automated analysis using Python on an HPC cluster.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">May 2023 – Jun 2023</div>
+          <div class="timeline-content">
+            <h3>Clinical Research Intern | NeuroGen Brain and Spinal Research Institute</h3>
+            <p>
+              Analyzed clinical datasets from 36 patient samples to evaluate the effects of integrative therapies on biological aging markers. Performed statistical analysis and improved documentation between research and clinical teams.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">May 2023 – Sep 2023</div>
+          <div class="timeline-content">
+            <h3>Research Intern | Protein Biophysics Lab, IIT-Madras</h3>
+            <p>
+              Studied the relationship between protein size and radius of gyration using structural data from the PDB. Implemented statistical analysis and visualization workflows in MATLAB to characterize protein structure trends.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/anushka-don/scanpy" target="_blank">Single-cell RNA-seq Analysis with Scanpy</a></li>
-        <li><a href="https://github.com/anushka-don/chip_seq" target="_blank">ChIP-seq Data Analysis and Motif Discovery</a></li>
-        <li><a href="https://github.com/anushka-don/rna_seq" target="_blank">Bulk RNA-seq Data Analysis</a></li>
-        <li><a href="https://github.com/anushka-don/starr_query" target="_blank">Starr-seq Transcriptome Web App</a></li>
-        <li><a href="https://github.com/anushka-don/gene_de_analysis_app" target="_blank">Differential Expression Analysis App</a></li>
+    <section class="section two-column" id="skills">
+      <div>
+        <p class="section-label">Toolkit</p>
+        <h2>Methods and tools I use.</h2>
+      </div>
+      <div class="skill-columns">
+        <div class="skill-block">
+          <h3>Programming and Scripting</h3>
+          <p>Python, R, SQL, MATLAB, Bash, Linux, HPC, Git, Nextflow</p>
+        </div>
+        <div class="skill-block">
+          <h3>Bioinformatics</h3>
+          <p>Bulk RNA-seq, scRNA-seq, Chip-seq, transcriptomics, epigenomics, proteomics, metabolomics</p>
+        </div>
+        <div class="skill-block">
+          <h3>NGS tools</h3>
+          <p>STAR, BWA, Bowtie2, ScanPy, Seurat, DESeq2, edgeR, MACS2, HOMER, Bioconductor, Biopython</p>
+        </div>
+        <div class="skill-block">
+          <h3>ML & statistics</h3>
+          <p>Regression, classification, clustering, dimensionality reduction, gradient boosting, cross-validation, supervised and unsupervised learning</p>
+        </div>
+        <div class="skill-block">
+          <h3>Formats & resources</h3>
+          <p>FASTQ, BAM, VCF, BED, Ensembl, UCSC Genome Browser, NCBI, GenBank</p>
+        </div>
+        <div class="skill-block">
+          <h3>Web & apps</h3>
+          <p>Flask, Docker, R Shiny, HTML, CSS, JavaScript, relational databases</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-publications" id="publications">
+      <div class="education-card">
+        <p class="section-label">Education</p>
+        <h2>Academic background</h2>
+        <div class="degree">
+          <h3>Boston University</h3>
+          <p>MS in Bioinformatics | GPA 3.93/4</p>
+          <span>Sep 2024 – Jan 2026</span>
+        </div>
+        <div class="degree">
+          <h3>Vellore Institute of Technology</h3>
+          <p>B.Tech in Biotechnology | GPA 8.75/10</p>
+          <span>Sep 2020 – May 2024</span>
+        </div>
+      </div>
+
+      <div class="publication-card">
+        <p class="section-label">Publications</p>
+        <h2>Published work</h2>
+        <ul class="publication-list">
+          <li>
+            <a href="https://doi.org/10.20944/preprints202407.1110.v1" target="_blank" rel="noopener">Evaluating the Impact of Anti-Aging Integrative Therapy on Cellular Aging and Quality of Life</a>
+            <span>Oct 2024</span>
+          </li>
+          <li>
+            <a href="https://www.preprints.org/manuscript/202407.1110" target="_blank" rel="noopener">Anti-aging Integrative Therapy Effects: A Clinical Study</a>
+            <span>Aug 2024</span>
+          <li>
+            <a href="https://doi.org/10.1080/01932691.2024.2325390" target="_blank" rel="noopener">Sono-assisted adsorption of nitrate by Fe-modified chitosan-zeolite composite material</a>
+            <span>Mar 2024</span>
+          </li>
         </ul>
+      </div>
     </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><a href="https://doi.org/10.1080/01932691.2024.2325390" target="_blank">
-          Sono-assisted nitrate adsorption using Fe-modified composite
-        </a></li>
-        <li><a href="https://doi.org/10.20944/preprints202407.1110.v1" target="_blank">
-          Anti-aging Integrative Therapy – A Clinical Study
-        </a></li>
-        <li><a href="https://doi.org/10.21275/SR24928103739" target="_blank">
-          Impact of Anti-Aging Therapy on Quality of Life
-        </a></li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:d13anushka@gmail.com">d13anushka@gmail.com</a></p>
-      <p>BU Email: <a href="mailto:anudon@bu.edu">anudon@bu.edu</a></p>
-      <p><a href="https://www.linkedin.com/in/anushka-dongaonkar-191b18201/" target="_blank">LinkedIn</a></p>
-      <p><a href="https://github.com/anushka-don" target="_blank">GitHub</a></p>
+    <section class="section contact-section" id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect.</h2>
+      <p>
+        I’m interested in bioinformatics, computational biology, omics data analysis, and research software roles where I can work closely with biological datasets and domain experts.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:dongaonkar.anu@gmail.com">Email</a>
+        <a href="https://github.com/anushka-don" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/anushka-dongaonkar/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </section>
   </main>
 </body>
