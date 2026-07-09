@@ -256,6 +256,13 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.hero-card h3 {
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+
 .hero-card p:not(.card-kicker) {
   color: var(--muted);
 }
